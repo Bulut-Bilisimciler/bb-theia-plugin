@@ -1,9 +1,9 @@
 {
   "private": false,
-  "name": "@bulutbilisimciler/bb-theia-workspace-browser",
+  "name": "bulutbilisimciler-theia-workspace-browser",
   "version": "1.1.0",
   "dependencies": {
-    "@bulutbilisimciler/bb-theia-plugin": "1.1.0",
+    "bulutbilisimciler-bb-theia-plugin": "1.1.0",
     "@theia/callhierarchy": "1.41.0",
     "@theia/core": "1.41.0",
     "@theia/debug": "1.41.0",

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@bulutbilisimciler/bb-theia-workspace",
+  "name": "bulutbilisimciler-bb-theia-workspace",
   "version": "1.1.0",
   "engines": {
     "yarn": ">=1.7.0 <2",
