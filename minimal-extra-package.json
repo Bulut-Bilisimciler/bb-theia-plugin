@@ -1,0 +1,16 @@
+{
+  "@theia/getting-started": "1.41.0",
+  "@theia/bulk-edit": "1.41.0",
+  "@theia/console": "1.41.0",
+  "@theia/keymaps": "1.41.0",
+  "@theia/markers": "1.41.0",
+  "@theia/memory-inspector": "1.41.0",
+  "@theia/metrics": "1.41.0",
+  "@theia/notebook": "1.41.0",
+  "@theia/outline-view": "1.41.0",
+  "@theia/plugin-metrics": "1.41.0",
+  "@theia/task": "1.41.0",
+  "@theia/timeline": "1.41.0",
+  "@theia/typehierarchy": "1.41.0",
+  "@theia/variable-resolver": "1.41.0"
+}

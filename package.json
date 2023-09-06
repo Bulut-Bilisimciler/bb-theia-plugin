@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "@bulutbilisimciler/bb-theia-workspace",
+  "version": "1.1.0",
+  "engines": {
+    "yarn": ">=1.7.0 <2",
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "build:browser": "yarn --cwd bb-theia-browser bundle",
+    "build:electron": "yarn --cwd electron-app bundle",
+    "prepare": "lerna run prepare",
+    "postinstall": "npx theia check:theia-version",
+    "start:browser": "yarn --cwd bb-theia-browser start",
+    "start:electron": "yarn --cwd electron-app start",
+    "watch": "lerna run --parallel watch"
+  },
+  "devDependencies": {
+    "lerna": "2.4.0"
+  },
+  "workspaces": [
+    "bb-theia-plugin",
+    "bb-theia-browser"
+  ]
+}
