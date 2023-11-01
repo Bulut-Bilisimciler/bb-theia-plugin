@@ -41,7 +41,7 @@
     "bundle": "yarn rebuild && theia build --mode development",
     "rebuild": "theia rebuild:browser",
     "download:plugins": "theia download:plugins",
-    "start": "theia start --plugins=local-dir:plugins --ovsx-router-config=../ovsx-router-config.json",
+    "start": "THEIA_WEBVIEW_EXTERNAL_ENDPOINT={{hostname}} theia start --plugins=local-dir:plugins --ovsx-router-config=../ovsx-router-config.json -p 3000 -h localhost",
     "watch": "yarn rebuild && theia build --watch --mode development"
   },
   "theia": {
@@ -58,12 +58,12 @@
   },
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {
-    "eclipse-theia.builtin-extension-pack": "https://open-vsx.org/api/eclipse-theia/builtin-extension-pack/1.79.0/file/eclipse-theia.builtin-extension-pack-1.79.0.vsix",
     "EditorConfig.EditorConfig": "https://open-vsx.org/api/EditorConfig/EditorConfig/0.16.6/file/EditorConfig.EditorConfig-0.16.6.vsix",
-    "golang.Go": "https://open-vsx.org/api/golang/Go/0.39.1/file/golang.Go-0.39.1.vsix",
     "dbaeumer.vscode-eslint": "https://open-vsx.org/api/dbaeumer/vscode-eslint/2.4.2/file/dbaeumer.vscode-eslint-2.4.2.vsix",
     "ms-vscode.js-debug": "https://open-vsx.org/api/ms-vscode/js-debug/1.78.0/file/ms-vscode.js-debug-1.78.0.vsix",
-    "ms-vscode.js-debug-companion": "https://open-vsx.org/api/ms-vscode/js-debug-companion/1.1.2/file/ms-vscode.js-debug-companion-1.1.2.vsix"
+    "ms-vscode.js-debug-companion": "https://open-vsx.org/api/ms-vscode/js-debug-companion/1.1.2/file/ms-vscode.js-debug-companion-1.1.2.vsix",
+    "mtxr.sqltools": "https://open-vsx.org/api/mtxr/sqltools/0.28.0/file/mtxr.sqltools-0.28.0.vsix",
+    "mtxr.sqltools-driver-pg": "https://open-vsx.org/api/mtxr/sqltools-driver-pg/0.5.1/file/mtxr.sqltools-driver-pg-0.5.1.vsix"
   },
   "theiaPluginsExcludeIds": [
     "ms-vscode.js-debug-companion",
